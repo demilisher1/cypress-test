@@ -52,7 +52,7 @@ context('Actions', () => {
     cy.get('.action-clear').type('Clear this text')
       .should('have.value', 'Clear this text')
       .clear()
-      .should('have.value', '')
+      .should('have.value', '')  //зачем это тут
   })
 
   it('.submit() - submit a form', () => {
@@ -105,7 +105,7 @@ context('Actions', () => {
       .click(170, 165)
 
     // click multiple elements by passing multiple: true
-    cy.get('.action-labels>.label').click({ multiple: true })
+    cy.get('.action-labels>.label').click({ multiple: true })  //зачем .label
 
     // Ignore error checking prior to clicking
     cy.get('.action-opacity>.btn').click({ force: true })
@@ -296,3 +296,4 @@ context('Actions', () => {
     cy.get('#scrollable-both').scrollTo('center', { duration: 2000 })
   })
 })
+
