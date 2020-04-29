@@ -22,4 +22,10 @@
 //
 //
 // -- This will overwrite an existing command --
-// Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+// Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... }
+Cypress.Commands.add('test', testString => {
+         cy.contains('Sign In').click()
+         cy.get('input#email').type('test5@mail.com')
+         cy.get('input#pass').first().type('1cvaoxhok1Q')
+         cy.get("button#send2").first().click()
+})
