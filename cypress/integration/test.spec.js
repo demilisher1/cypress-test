@@ -7,13 +7,13 @@ describe('it`s my really first test', () => {
         cy.contains('Sign In').click()
 
         // Assignment an entry field and type test information of email
-        cy.get('input#email').type('test5@mail.com')
+        cy.get('input[name="login[username]"]').type('test5@mail.com')
 
         // Assignment an entry field and type test information of password
         cy.get('input[name="login[password]"]').type('1cvaoxhok1Q')
 
         // //Search and click to "Sign In" button
-        cy.get('button[type="submit"]').click()
+        cy.get('form#login-form fieldset > div.actions-toolbar > div.primary > button#send2 > span').click()
 
     })
 //     it('Login is not Correct', () =>{
