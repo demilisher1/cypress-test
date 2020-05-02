@@ -3,14 +3,14 @@ describe('Test for LogOut', () => {
          cy.visit('http://demo-acm-2.bird.eu/home')
         cy.contains('Sign In').click()
         //cy.url(). should('include', 'customer/account/create/')
-         cy.get('#email').type('test11@gmail.com');
+         cy.get('#email').type('test12@gmail.com');
          cy.get('#pass').type('1cvaoxhok1Q');
          cy.get('button#send2.action.login.primary').click()
              .wait(4000)
         cy.get('button.action.switch').first().click()
         cy.contains('Sign Out').click()
 
-        // извини пишу на русском слишком много печатать. смысл что есть 2 активные кновки для выхода из акка,
+        // извини пишу на русском слишком много печатать. смысл что есть 2 активные кноgки для выхода из акка,
         //но одна находится вне поля зрения, ее не вынес программист (считаю косяком).
 
 
