@@ -11,7 +11,7 @@ describe('Create a new customer)',() => {
         cy.get('#is_subscribed').not('[disabled]')
             //cy.get('input[name="is_subscribed"]').not('[disabled]') // work`s too
             .check().should('be.checked')
-        cy.get('#email_address').type('test12@gmail.com')
+        cy.get('#email_address').type('test1214@gmail.com')
         cy.get('#password').type('1cvaoxhok1Q')
         cy.get('#password-confirmation').type('1cvaoxhok1Q')
         cy.get('button.action.submit.primary').click()
