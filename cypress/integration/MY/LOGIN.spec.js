@@ -1,5 +1,5 @@
 describe('Test for LogOut', () => {
-    it('LogOut scenario', () => {
+    it('LogIn scenario', () => {
         cy.visit('http://demo-acm-2.bird.eu/home')
 
         cy.contains('Sign In').click();
@@ -10,8 +10,5 @@ describe('Test for LogOut', () => {
         LoginForm.get('#send2').click().wait(3000);
 
     })
-    it('LogOut scenario', () => {
-        cy.get('header .panel header > .header links > .authorization-link').click()
-        //cy.get('#ui-id-2 > li > span').contains('Women').parent().find('ul.level0').invoke('show');
-    })
+
 })
